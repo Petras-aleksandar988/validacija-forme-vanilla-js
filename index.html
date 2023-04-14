@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="module"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form" action="#">
+        <h1>Registracija Korisnika</h1>
+        <div class="input-box">
+          <label class="label" for="ime_prezime">Ime i prezime *</label>
+          <input
+            required
+            id="ime_prezime"
+            type="text"
+            name="ime_prezime"
+            placeholder="Marko Markovic"
+          />
+        </div>
+        <div class="input-box">
+          <label class="label" for="telefon">Telefon *</label>
+          <input
+            required
+            id="telefon"
+            type="number"
+            name="telefon"
+            placeholder="+38766111222"
+          />
+        </div>
+        <div class="input-box">
+          <label class="label" for="adresa_stanovanja"
+            >Adresa stanovanja *</label
+          >
+          <input
+            required
+            id="adresa_stanovanja"
+            type="text"
+            name="adresa_stanovanja"
+            placeholder="Marko Kraljevica"
+          />
+        </div>
+        <div class="input-box">
+          <label class="label" for="kucni_broj">Kucni broj *</label>
+          <input
+            required
+            id="kucni_broj"
+            type="number"
+            name="kucni_broj"
+            placeholder="40"
+          />
+        </div>
+        <div class="input-box">
+          <label class="label" for="postanski_broj">Postanski broj *</label>
+          <input
+            required
+            id="postanski_broj"
+            type="number"
+            name="postanski_broj"
+            placeholder="78000"
+          />
+        </div>
+        <div class="input-box">
+          <label class="label" for="mjesto">Mjesto *</label>
+          <input
+            required
+            id="mjesto"
+            type="text"
+            name="mjesto"
+            placeholder="Banja Luka"
+          />
+        </div>
+        <div class="input-box">
+          <label class="label" for="email_adresa">Email adresa *</label>
+          <input
+            required
+            id="email_adresa"
+            type="email"
+            name="email_adresa"
+            placeholder="marko.markovic@gmail.com"
+          />
+        </div>
+        <div class="input-box">
+          <label class="label" for="posebne_napomene"
+            >Polje za posebne napomene *</label
+          >
+          <input
+            required
+            id="posebne_napomene"
+            type="text"
+            name="posebne_napomene"
+            placeholder="napisite nesto o sebi..."
+          />
+        </div>
+        <div>
+          <button type="submit" class="btn">Registruj se</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="overlay">
+      <button class="overlay-btn">X</button>
+      <h1>cestitamo!</h1>
+      <h2>Uspjesno ste ste registrovali na vas nalog</h2>
+    </div>
+   
+      <div class="overlayError">
+        <button class="overlay-error-btn">X</button>
+        <h1>Molimo vas popunite ispravno polja za registraciju</h1>
+      </div>
+   
+  </body>
+</html>
